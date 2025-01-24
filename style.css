@@ -1,0 +1,100 @@
+#heading {
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+
+#garlicNoodlesHeading {
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#table1 {
+    table,th,td {
+        border:1px solid black;
+    }
+}
+
+#chickenBiryaniHeading {
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+p {
+    margin: none;
+}
+
+#background {
+    background-color: #ADD8E6;
+}
+
+#menuText {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3e3c3c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 96.4%;
+}
+
+.button {
+    background-color: #3e3c3c;
+    border: none;
+    color: white;
+    padding: 0.5% 0.5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    top: -15px;
+}
+
+#sideNav {
+    height: 1%;
+    width: 100%;
+    background-color: #3e3c3c;
+}
+
+#buttonsPane {
+    height: 45px;
+    align-items: top;
+    background-color: #3e3c3c;
+}
+
+.pageContent {
+    margin-top: 20px;
+    height: 695px;
+    width: 100%;
+}
+
+#recipeOfTheWeekText {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#allRecipesText {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#images {
+    text-align: center;
+}
