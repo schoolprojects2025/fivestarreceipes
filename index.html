@@ -2,42 +2,117 @@
 <html lang="en-US">
     <head>
         <title>
-            Cooking Recipes
+            5 Star Recipes
         </title>
-        <div id="heading">
+        <div id="images">
             <header>
                 <img src="logo.jpg" width="150" height="150">
             </header>
         </div>
         <link rel = "stylesheet" href = "style.css">
         <script src="script.js"></script>
-
-        
     </head>
 
     <body>
-        <div id='leftmenuinner'>
-        <div id='leftmenuinnerinner'>
         <div class='menuSideBar' id='sideNav'>
             <!-- <h2 id="menuText">Menu</h2> -->
         </div>    
         <div class='menuSideBar' id='buttonsPane'>
             <br><a target="_top" class="button" id="garlicNoodlesRecipe" href="AllRecipes.html">All Recipes</a>
-            <a target="_top" class="button" id="recipeOfTheWeek" href="#" onclick="loadPageContent('recipeOfTheWeek.html')">Recipe of the Week</a>
-            <h2 id="recipeOfTheWeekText">Recipe of the Week</h2>
-            <img src="garlicnoodles.jpg" width="700" height="500"><br>
-            <br><br><br><br><br>
-            <h1 id="allRecipesText">All Recipes</h1>
+            <a target="_top" class="button" id="recipeOfTheWeek" href="recipeOfTheWeek.html">Recipe of the Week</a>           
+        </div>
+        <div class="formLeft" width="50%">
+            <h2>Ready to cook!</h2>
+            <!-- Step 1: Start by choosing what type of meal you are in mood for -->
+            <div id="step-1">
+                <p>What type of meal you want to make?</p>
+                <label>
+                    <input type="radio" name="mealType" value="breakFast"> Breakfast
+                </label><br>
+                <label>
+                    <input type="radio" name="mealType" value="lunch"> Lunch
+                </label><br>
+                <label>
+                    <input type="radio" name="mealType" value="dinner"> Dinner
+                </label><br>
+                  <label>
+                    <input type="radio" name="mealType" value="dessert"> Dessert
+                </label><br>
+    
+                <button type="button" class="next-btn" onclick="nextStep(2)">Next</button>
+            </div>
+    
+            <!-- Step 2: Choose to pick how much time you have-->
+            <div id="step-2">
+                <p>How much time you have?</p>
+                <label>
+                    <input type="radio" name="time" value="lessTime"> 5-15 mins
+                </label><br>
+                <label>
+                    <input type="radio" name="time" value="mediumTime"> 15-25 mins
+                </label><br>
+                <label>
+                    <input type="radio" name="time" value="moreTime"> 25 - 45 mins
+                </label><br>
+    
+                <button type="button" class="next-btn" onclick="nextStep(3)">Next</button>
+                <button type="button" class="prev-btn" onclick="prevStep(1)">Previous</button>
+            </div>
+    
+            <!-- Step 3: Thank you Message -->
+            <div id="step-3">
+                <p>Lets start to cook! Click on "Suggestions" to get available suggestions for the selections made!</p>
+                <button type="button" class="submit-btn" onclick="submitForm()">Suggestions</button>
+                <button type="button" class="prev-btn" onclick="prevStep(2)">Previous</button>
+            </div>
+        </div>
+    
+        <script src="script.js"></script> <!-- Link to external JavaScript -->
+        </div>
+        <div class="formRight" width="50%">
+        <aside>
             <table>
                 <tr>
+                    <td></td>
                     <td>
-                        <img src="garlicnoodles.jpg" height="200" width="300">
-                        <img src="HyderabadChickenDumBiryani.jpg" height="200" width="300">
-                        <img src="ChickenMakhani.jpg" height="200" width="300">
-                        <img src="Crêpes.jpg" height="200" width="200">
+                        <h2 id="headingsText">Recipe of the Week</h2>
+                        <img src="garlicnoodles.jpg" width="700" height="500">
                     </td>
                 </tr>
+            </table>
+        </aside>
+        </div>
+            <section>
+            <table>
+                <th id="tableHeadings">Highlights of the Month</th>
+                <tr>
+                    <td><img src="garlicnoodles.jpg" height="200" width="300"></td>
+                    <td><img src="HyderabadChickenDumBiryani.jpg" height="200" width="300"></td>
+                    <td><img src="ChickenMakhani.jpg" height="200" width="300"></td>
+                    <td><img src="Crêpes.jpg" height="200" width="300"></td>
+                </tr>
+                <tr>
+                    <td>Garlic Noodles</td>
+                    <td>Chicken Biryani</td>
+                    <td>Chicken Makhani</td>
+                    <td>Crêpes</td>
+                </tr>
+            </table>
+            
+            <table>
+                <th id="tableHeadings">More Recipes</th>
+                <tr>
+                    <td><img src="chickenTikkaMasala.jpg" height="200" width="300"></td>
+                    <td><img src="quesadilla.jpg" height="200" width="300"></td>
+                    <td><img src="veggieWrap.jpg" height="200" width="300"></td>
+                    <td><img src="chocolateMousse.jpg" height="200" width="300"></td>
+                </tr>
             </table><br>
+            </section>
             <br><object id="contentObject" data="" class="pageContent"></object>
+            <footer>
+                <p>&copy; 2025 Your Website. All rights reserved.</p>
+                <p>Visit us at: <a href="tsa_-_forms_appendix.pdf">yourwebsite.com</a></p>
+            </footer>
         </body>
 </html>
