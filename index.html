@@ -1,3 +1,87 @@
-<html>
-<body>This is a Test Page</html>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head
+    <meta charset="utf-8" />
+    <title>Five Star Recipes </title>
+    <link rel= "stylesheet" href = "homepage.css">
+           <div id= "heading">
+            <header>
+                <img src="Logo.jpg" width="250" height="200">
+            </header>
+        </div>
+</head>
+<body>
+
+<div class= "menuBar">
+    <a  href="AllRecipes.html">All Recipes</a>
+    <a  href="noodles.html">Recipe Of The Week</a>
+</div>
+
+<table width="100%">
+    <tr>
+        <td class="tableTop">
+              <form>
+                <fieldset>
+                 <legend>Search for Recipe</legend>
+                 <label for="options">Select your meal type:</label>
+                    <select id="options" name="options">
+                        <option value="option1">Breakfast</option>
+                        <option value="option2">Lunch</option>
+                        <option value="option3">Dinner</option>
+                        <option value="option4">Snack</option>
+                    </select><br>
+                <label for="fruits">Select cooking duration:</label>
+                    <select id="options" name="options">
+                        <option value="option1">0min-15min</option>
+                        <option value="option2">15min-30min</option>
+                        <option value="option3">30min-60min</option>
+                        <option value="option4">60min+</option>
+                    </select><br>
+                <input type="submit" value="Submit">
+               </fieldset>
+             </form>
+        </td>
+        <td class="tableTop">
+             <h2> Recipe Of The Week</h2>
+             <img class ="imgTop "src="noodleimage.jpg" height="300">
+        </td>
+    </tr>
+</table>
+         
+
+<section>
+<h1 class="imgh1">Highlights Of The Month</h1>
+<table class="imgtable">
+     <tr>
+          <td><img src= "noodleimage.jpg" height="195" width="300"></td>
+          <td><img src= "chickenbiryani.jpg" height="195" width="300"></td>
+          <td><img src= "chickenmakhani.jpg" height="195" width="300"></td>
+          <td><img src= "crepe.jpg" height= "195" width="300"></td>
+    </tr>
+    <tr>
+       <td>Garlic noodles</td>
+       <td>Chicken Biryani</td>
+       <td>Chicken Makhani</td>
+       <td>Crepe</td>
+    </tr>
+</table>
+
+<h1 class="imgh1">More Recipes</h1>
+<table class="imgtable">
+    <tr>
+       <td><img src="chickenTikkaMasala.jpg" height="195" width="300"></td>
+        <td><img src="quesadilla.jpg" height="195" width="300"></td>
+        <td><img src="veggieWraps.jpg" height="195" width="300"></td>
+        <td><img src="choclateMousse.jpg" height="195" width="300"></td>
+    </tr>
+    <tr>
+        <td>Chicken Tikka Masala</td>
+        <td>Quesadilla</td>
+        <td>Veggie Wraps</td>
+        <td>Choclate Mousse</td>
+    </tr>
+</table>
+</section>
+</body>
 </html>
