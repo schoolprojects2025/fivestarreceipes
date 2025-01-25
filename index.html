@@ -1,87 +1,114 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head
-    <meta charset="utf-8" />
-    <title>Five Star Recipes </title>
-    <link rel= "stylesheet" href = "homepage.css">
-           <div id= "heading">
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            Five Star Recipes
+        </title>
+        <div id="heading">
             <header>
-                <img src="Logo.jpg" width="250" height="200">
+                <img src="images/logo.jpg" width="150" height="150">
             </header>
         </div>
-</head>
-<body>
+        <link rel = "stylesheet" href = "css/homepage.css">
+        <script src="script/script.js"></script>
+    </head>
 
-<div class= "menuBar">
-    <a  href="AllRecipes.html">All Recipes</a>
-    <a  href="noodles.html">Recipe Of The Week</a>
-</div>
+    <body>
+        <div class='menuBar'>
+            <a href="AllRecipes.html">All Recipes</a>
+            <a href="recipeOfTheWeek.html">Recipe of the Week</a>           
+        </div>
+        
+        <div class="container">
+           <div class="leftForm">
+           <br><br>
+            <form>
+                <fieldset class="fieldset">
+                    <legend class="legend">Ready to cook!</legend>
+                    <!-- Step 1: Start by choosing what type of meal you are in mood for -->
+                     <div id="step-1">
+                        <p>What type of meal you want to make?</p>
+                        <label>
+                            <input type="radio" name="mealType" value="breakFast"> Breakfast
+                        </label><br>
+                        <label>
+                            <input type="radio" name="mealType" value="lunch"> Lunch
+                        </label><br>
+                        <label>
+                            <input type="radio" name="mealType" value="dinner"> Dinner
+                        </label><br>
+                        <label>
+                            <input type="radio" name="mealType" value="dessert"> Dessert
+                        </label><br>
+                    </div>
+    
+                    <!-- Step 2: Choose to pick how much time you have-->
+                    <div id="step-2">
+                        <p>How much time you have?</p>
+                        <label>
+                            <input type="radio" name="time" value="lessTime"> 5-15 mins
+                        </label><br>
+                        <label>
+                            <input type="radio" name="time" value="mediumTime"> 15-25 mins
+                        </label><br>
+                        <label>
+                            <input type="radio" name="time" value="moreTime"> 25 - 45 mins
+                        </label><br>
+                    </div>
+    
+                    <!-- Step 3: Thank you Message -->
+                    <div id="step-3">
+                        <p>Lets start to cook! Click on "Suggestions" to get available suggestions for the selections made!</p>
+                        <button type="button" class="submit-btn" onclick="submitForm()">Suggestions</button>
+                    </div>
+                </div>
 
-<table width="100%">
-    <tr>
-        <td class="tableTop">
-              <form>
-                <fieldset>
-                 <legend>Search for Recipe</legend>
-                 <label for="options">Select your meal type:</label>
-                    <select id="options" name="options">
-                        <option value="option1">Breakfast</option>
-                        <option value="option2">Lunch</option>
-                        <option value="option3">Dinner</option>
-                        <option value="option4">Snack</option>
-                    </select><br>
-                <label for="fruits">Select cooking duration:</label>
-                    <select id="options" name="options">
-                        <option value="option1">0min-15min</option>
-                        <option value="option2">15min-30min</option>
-                        <option value="option3">30min-60min</option>
-                        <option value="option4">60min+</option>
-                    </select><br>
-                <input type="submit" value="Submit">
-               </fieldset>
-             </form>
-        </td>
-        <td class="tableTop">
-             <h2> Recipe Of The Week</h2>
-             <img class ="imgTop "src="noodleimage.jpg" height="300">
-        </td>
-    </tr>
-</table>
-         
+           <div class="formRight">
+               <h1>The Latest</h1>
+               <hr color="orange" align="left" size="5" width="95%">
+               <img class= "imgTop" height="350" src="images\garlicnoodles.jpg">
+           </div>
+        </div>
+        
+      <br><br>
+      <section>
+            <table class ="imgtable">
+                <th>Highlights of the Month</th>
+                <tr>
+                    <td><img src="images\garlicnoodles.jpg" height="200" width="300"></td>
+                    <td><img src="images\HyderabadChickenDumBiryani.jpg" height="200" width="300"></td>
+                    <td><img src="images\ChickenMakhani.jpg" height="200" width="300"></td>
+                    <td><img src="images\Crêpes.jpg" height="200" width="300"></td>
+                </tr>
+                <tr>
+                    <td>Garlic Noodles</td>
+                    <td>Chicken Biryani</td>
+                    <td>Chicken Makhani</td>
+                    <td>Crêpes</td>
+                </tr>
+            </table>
+            
+            <table class="imgtable">
+                <th>More Recipes</th>
+                <tr>
+                    <td><img src="images\chickenTikkaMasala.jpg" height="200" width="300"></td>
+                    <td><img src="images\quesadilla.jpg" height="200" width="300"></td>
+                    <td><img src="images\veggieWrap.jpg" height="200" width="300"></td>
+                    <td><img src="images\chocolateMousse.jpg" height="200" width="300"></td>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka Masala</td>
+                    <td>Quesadilla</td>
+                    <td>Veggie Wraps</td>
+                    <td>Chocolate Mousse</td>
+                </tr>
+            </table>
+            </section>
 
-<section>
-<h1 class="imgh1">Highlights Of The Month</h1>
-<table class="imgtable">
-     <tr>
-          <td><img src= "noodleimage.jpg" height="195" width="300"></td>
-          <td><img src= "chickenbiryani.jpg" height="195" width="300"></td>
-          <td><img src= "chickenmakhani.jpg" height="195" width="300"></td>
-          <td><img src= "crepe.jpg" height= "195" width="300"></td>
-    </tr>
-    <tr>
-       <td>Garlic noodles</td>
-       <td>Chicken Biryani</td>
-       <td>Chicken Makhani</td>
-       <td>Crepe</td>
-    </tr>
-</table>
-
-<h1 class="imgh1">More Recipes</h1>
-<table class="imgtable">
-    <tr>
-       <td><img src="chickenTikkaMasala.jpg" height="195" width="300"></td>
-        <td><img src="quesadilla.jpg" height="195" width="300"></td>
-        <td><img src="veggieWraps.jpg" height="195" width="300"></td>
-        <td><img src="choclateMousse.jpg" height="195" width="300"></td>
-    </tr>
-    <tr>
-        <td>Chicken Tikka Masala</td>
-        <td>Quesadilla</td>
-        <td>Veggie Wraps</td>
-        <td>Choclate Mousse</td>
-    </tr>
-</table>
-</section>
-</body>
+            <hr>
+            <footer>
+                <p>&copy; 2025 Your Website. All rights reserved.</p>
+                <p>Visit us at: <a href="pdf\tsa_-_forms_appendix.pdf">yourwebsite.com</a></p>
+            </footer>
+        </body>
 </html>

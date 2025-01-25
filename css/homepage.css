@@ -13,7 +13,7 @@
 .menuBar {
 	height: 40px;
 	width: 1340px;
-	background-color: #3e3c3c;
+	background-color: #2D5DA1;
 }
 
 
@@ -34,46 +34,58 @@
 
 .imgtable{
 	width="100%";
-	margin-bottom:3cm
+	margin-bottom:2cm
+}
+
+.imgtable th{
+	color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    font-size: 25px;
 }
 
 
 .imgtable td{
-		padding:10px;
+		padding:15px;
 		text-align:center;		
 		
 }
 
-.tableTop td{
-	text-align:center;
-	width=50%
-	border:1px solid black;
-	background-color:blue;
-}
-
 .imgTop{
 	position:relative;
-	padding:10px;
-	width:100%
+	width:95%;
 }
 
 
-.left {
-      width: 50%;
-      padding: 20px;
-	  float:left;
-	  background-color:blue;
-    }
+.formLeft {
+    float: left;
+	flex: 50%;
+}
 
-.right {
-      width: 50%;
-      padding: 20px;
-	  float:right;
-	  background-color:red;
-    }
+.formRight {
+	flex: 50%;
+    float: right;
+	
+}
 
+.container {
+    display: flex;
+	bottom-margin: 50px;
+ 	width: 100%;
+}
 	
 .legend {
-    white-space: normal
+    white-space: normal;
     display:table;
+	color: #2D5DA1;
+	font-weight: bold;
+}
+
+.fieldset {
+    border-color:#0041C2;	
+	padding: 25px;
+}
+
+.submit-btn{
+	height: 30px;
 }

@@ -1,0 +1,83 @@
+#heading {
+	text-align: center;
+	background-color: white;
+}
+
+#section{
+	position:relative;
+	width:100%;
+	display: flex;
+	
+}
+
+#table1 {
+	margin-bottom: 1cm;
+	table,th,td{
+		border:1px solid black;
+
+	}
+}
+
+#table2 {
+		border:1px solid orange;
+		
+}
+
+#table2 td, th{
+		padding:10px;
+		
+}
+
+#table3 tr{
+	padding: 10px;
+}
+
+#table3 td{
+	padding:10px;
+	align: right;
+}
+
+#headingsText {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+	margin-bottom:1cm;
+}
+
+.nav{
+	text-decoration: none;
+}
+
+.nutrition{
+	font-size:10px;
+	font-weight: bold;
+}
+
+.container {
+    display: flex;
+ 	width: 100%;
+}
+
+.itemLeft {
+   	flex: 45%;
+}
+
+.itemRight {
+	flex: 55%;
+}
+
+.img{
+	position:relative;
+	width:95%;
+}
+
+.btn{
+	height: 30px;
+	width: 75px;
+}
+
+
+
+
+
