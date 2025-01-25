@@ -2,16 +2,20 @@
 <html lang="en-US">
     <head>
         <title>Garlic Noodles Recipe</title>
-        <!-- <div id="heading">
+        <link rel = "stylesheet" href = "css/receipepage.css">
+        <script src="script/script.js"></script>
+
+        <div id="heading">
             <header>
-                <img src="logo.jpg" width="200" height="200">
+                <img src="images/logo.jpg" width="150" height="150">
             </header>
-            <form action="index.html">
-                <button type="submit">← Back to Home Page</button>
-            </form> 
-        </div>          -->
-        <link rel = "stylesheet" href = "style.css">
-        <script src="script.js"></script>
+        </div>
+    </head>
+        
+    <body>
+        <a class="nav" href="index.html">HOME</a>
+        &nbsp; > &nbsp;
+        <a class="nav" href="AllRecipes.html">ALL RECEIPES</a>
         <div id="headingsText">
             <header>
                 <img src="logo.jpg" width="150" height="150">
@@ -20,25 +24,46 @@
             <h1>
                 Garlic Noodles Recipe
             </h1>
-            <img src="garlicnoodles.jpg">
-            <p><small>Source: Allrecipes</small></p>
+
+            <img src="images\garlicnoodles.jpg" width="75%" height="400">
         </div>
-            <table id="table1">
+
+        <div class="container">
+        <div class="itemLeft">
+            <table id="table2">
                 <tr>
-                    <th>Prep Time</th>
-                    <th>Cook Time</th>
-                    <th>Total Time</th>
+                    <td>Prep Time</td>
+                    <td>Cook Time</td>
+                    <td>Total Time</td>
                 </tr>
                 <tr>
                     <td>5-7 min</td>
                     <td>10-12 min</td>
                     <td>15-20 min</td>
                 </tr>
+                <tr>
+                    <td colspan="3"><a href="#nutrition">Jump To Nutrition Facts </a></td>
+                </tr>
             </table>
         </div>
-    </head>
+        <div class="itemRight">
+            <table id ="table3" width="95%">
+               <tr>
+                <td align="right"><b>4.6 </b><a href="">(121 Reviews) </a></td>
+               </tr>
+               <tr>
+                <td align="right">
+                    <button class="btn" type="button">Rate</button>
+                    <button class="btn" type="button">Print</button>
+                    <button class="btn" type="button">Share</button>
+                </td>
+               </tr>
+            </table>
+        </div>
+        </div>
 
-    <body>
+        <div class="container">
+        <div class="itemLeft">
         <h1>
             Ingredients
         </h1>
@@ -54,9 +79,14 @@
             <li> tablespoons of grated Parmesan cheese (Optional) <br></li>
             <li>Chopped scallions or parsley</li>
         </p>
+        </div>
+        <div class="itemRight">
+            <img src="images\GarlicNoodlesIngredients.jpg" width="95%" height="250">
+        </div>
+        </div>
 
         <h1>
-            <br>Instructions
+            Instructions
         </h1>
         <p>
             <h2>1. Cook the Noodles:</h2>
@@ -70,5 +100,78 @@
             <h2>5. Finish and Serve</h2>
             <li>Remove from heat, garnish with Parmesan cheese and scallions or parsley, and serve immediately.</li>
         </p>
+
+    <div id= "nutrition">
+    <h2>Nutrition Facts (Per Serving)</h2>
+    <table id="table1">
+       <tr>
+         <td>Calories</td>
+         <td> 300 - 450 kcal </td>
+       </tr>
+       <tr>
+         <td>Carbohydrates</td>
+         <td>45 - 60g</td>
+       </tr>
+       <tr>
+         <td>Fiber</td>
+         <td>2 - 4g</td>
+       </tr>
+       <tr>
+         <td>Sugars</td>
+         <td>2 - 4g</td>
+       </tr>
+       <tr>
+         <td>Protein</td>
+         <td>7 - 10g</td>
+       </tr>
+       <tr>
+         <td>Fat</td>
+         <td>12 - 20g</td>
+       </tr>
+       <tr>
+         <td>Saturated Fat</td>
+         <td>6 - 10g</td>
+       </tr>
+       <tr>
+         <td>Trans Fat</td>
+         <td>0g</td>
+       </tr>
+       <tr>
+         <td>Cholesterol</td>
+         <td>20 - 40mg</td>
+       </tr>
+       <tr>
+         <td>Soduim</td>
+         <td>600 - 900mg</td>
+       </tr>
+       <tr>
+         <td>Potassium</td>
+         <td>150 - 250mg</td>
+       </tr>
+       <tr>
+         <td>Vitamin A</td>
+         <td>5 - 10% DV</td>
+       </tr>
+       <tr>
+         <td>Vitamin C</td>
+         <td>1 - 5% DV</td>
+       </tr>
+       <tr>
+         <td>Iron</td>
+         <td>10 -15% DV</td>
+       </tr>
+       <tr>
+         <td>Calcium</td>
+         <td>2 - 5% DV</td>
+       </tr>
+    </table>
+    </div>
+
+    <hr>
+    <footer>
+       <p>&copy; 2025 Your Website. All rights reserved.</p>
+       <p>Visit us at: <a href="pdf\tsa_-_forms_appendix.pdf">yourwebsite.com</a></p>
+    </footer>
     </body>
+
 </html>
