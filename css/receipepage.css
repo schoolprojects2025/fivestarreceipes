@@ -77,6 +77,17 @@
 	width: 75px;
 }
 
+.footer td{
+	padding:15px;
+	text-align:center;
+}
+
+.footer {
+	a:link, a:visited{
+		text-decoration:none;
+		color:black;
+	}
+}
 
 
 

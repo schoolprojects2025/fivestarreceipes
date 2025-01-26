@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <link rel = "stylesheet" href = "css/homepage.css">
         <title>
             Five Star Recipes
         </title>
         <div id="heading">
             <header>
-                <img src="images/Logo.jpg" width="150" height="150">
+              <div style="display: inline-block;"> 
+                <img src="images/Logo.jpg" width="200" height="150" background-color="blue">  
+              </div>
+              <div class="circle">Team<br>123456</div>
             </header>
         </div>
-        <link rel = "stylesheet" href = "css/homepage.css">
-        <script src="script/script.js"></script>
     </head>
 
     <body>
         <div class='menuBar'>
             <a href="AllRecipes.html">All Recipes</a>
-            <a href="recipeOfTheWeek.html">Recipe of the Week</a>           
+            <a href="AllRecipes.html">Lunch</a> 
+            <a href="AllRecipes.html">Dinner</a>           
         </div>
         
         <div class="container">
            <div class="leftForm">
-           <br><br>
-            <form>
+              <form>
                 <fieldset class="fieldset">
-                    <legend class="legend">Ready to cook!</legend>
+                    <legend class="legend">Ready to cook?</legend>
                     <!-- Step 1: Start by choosing what type of meal you are in mood for -->
                      <div id="step-1">
                         <p>What type of meal you want to make?</p>
@@ -64,21 +66,23 @@
                 </div>
 
            <div class="formRight">
-               <h1>The Latest</h1>
-               <hr color="orange" align="left" size="5" width="95%">
-               <img class= "imgTop" height="350" src="images\garlicnoodles.jpg">
+
+            <div class="topText">
+               The Latest
+            </div>
+            <hr color="orange" align="left" size="5" width="100%">
+            <img class= "topImg" height="305" src="images\garlicnoodles.jpg">
            </div>
         </div>
         
-      <br><br>
       <section>
             <table class ="imgtable">
                 <th>Highlights of the Month</th>
                 <tr>
-                    <td><a href="garlicNoodlesRecipe.html"><img src="images\garlicnoodles.jpg" height="200" width="300"></a></td>
-                    <td><img src="images\HyderabadChickenDumBiryani.jpg" height="200" width="300"></td>
-                    <td><img src="images\ChickenMakhani.jpg" height="200" width="300"></td>
-                    <td><img src="images\Crêpes.jpg" height="200" width="300"></td>
+                    <td><a href="garlicNoodlesRecipe.html"><img src="images\garlicnoodles.jpg" height="200"></a></td>
+                    <td><a href="chickenBiryaniRecipe.html"><img  src="images\HyderabadChickenDumBiryani.jpg" height="200"></a></td>
+                    <td><a href="ChickenMakhani.html"><img  src="images\ChickenMakhani.jpg" height="200"></a></td>
+                    <td><a href="ComingSoon.html"><img  src="images\Crêpes.jpg" height="200"></a></td>
                 </tr>
                 <tr>
                     <td>Garlic Noodles</td>
@@ -90,11 +94,11 @@
             
             <table class="imgtable">
                 <th>More Recipes</th>
-                <tr>
-                    <td><img src="images\chickenTikkaMasala.jpg" height="200" width="300"></td>
-                    <td><img src="images\quesadilla.jpg" height="200" width="300"></td>
-                    <td><img src="images\veggieWrap.jpg" height="200" width="300"></td>
-                    <td><img src="images\chocolateMousse.jpg" height="200" width="300"></td>
+                <tr width="100%">
+                    <td><a href="ComingSoon.html"><img src="images\chickenTikkaMasala.jpg" height="200"></td>
+                    <td><a href="ComingSoon.html"><img src="images\quesadilla.jpg" height="200"></td>
+                    <td><a href="ComingSoon.html"><img src="images\veggieWrap.jpg" height="200"></td>
+                    <td><a href="ComingSoon.html"><img src="images\chocolateMousse.jpg" height="200"></td>
                 </tr>
                 <tr>
                     <td>Chicken Tikka Masala</td>
@@ -107,8 +111,15 @@
 
             <hr>
             <footer>
-                <p>&copy; 2025 Your Website. All rights reserved.</p>
-                <p>Visit us at: <a href="pdf\tsa_-_forms_appendix.pdf">yourwebsite.com</a></p>
+            <table class="footer">
+                <tr>
+                    <td><a href="ComingSoon.html">Privacy Policy and Terms</td>
+                    <td><a href="SiteCredits.html">Site Credits</a></td>
+                    <td>All Rights Reserved</td>
+                </tr>
+            </table>
+            <center><a href="pdf\tsa_-_forms_appendix.pdf">Work Log and Checklist Forms</a>
+            <br>&copy; 5-Star Recipes 2025</center>
             </footer>
         </body>
 </html>
