@@ -1,31 +1,62 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title>Chicken Biryani Recipe</title>
-        <!-- <div id="heading">
-            <header>
-                <img src="logo.jpg" width="200" height="200">
-            </header>
-            <form action="index.html">
-                <button type="submit">← Back to Home Page</button>
-            </form> 
-        </div>  -->
-        <link rel = "stylesheet" href = "style.css">
-        <script src="script.js"></script>
-        <div id="headingsText">
-            <header>
-                <img src="logo.jpg" width="150" height="150">
-            </header>
-            <a href="AllRecipes.html"><button>Back to All Recipes Page</button></a>
-            <h1>
-                Chicken Biryani Recipe
-            </h1>
-            <img src="HyderabadChickenDumBiryani.jpg" width="300" height="200">
-            <p><small>Source: Vismai Food</small></p>
-        </div> 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel = "stylesheet" href = "css/receipepage.css">
+    <title>Chicken Biryani</title>
+    <div id="heading">
+        <header>
+          <div style="display: inline-block;"> 
+            <img src="images/Logo.jpg" width="200" height="150" background-color="blue">  
+          </div>
+          <div class="circle">Team<br>123456</div>
+        </header>
+    </div>
     </head>
-
 <body>
+ <a class="nav" href="index.html">HOME</a>
+        &nbsp; > &nbsp;
+        <a class="nav" href="AllRecipes.html">ALL RECEIPES</a>
+        <div id="headingsText">
+<h1>Chicken Biryani</h1>
+<img src="images/HyderabadChickenDumBiryani.jpg" width="75%" height="400">
+<p><small>Source: Vismai Food</small></p>
+    </div>
+    <div class="container">
+        <div class="itemLeft">
+            <table id="table2">
+                <tr>
+                    <td>Prep Time</td>
+                    <td>Cook Time</td>
+                    <td>Total Time</td>
+                </tr>
+                <tr>
+                    <td>5-7 min</td>
+                    <td>10-12 min</td>
+                    <td>15-20 min</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><a href="#nutrition">Jump To Nutrition Facts </a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="itemRight">
+            <table id ="table3" width="95%">
+               <tr>
+                <td align="right"><b>4.7 </b>(127 Reviews)</td>
+               </tr>
+               <tr>
+                <td align="right">
+                    <button class="btn" type="button">Rate</button>
+                    <button class="btn" type="button">Print</button>
+                    <button class="btn" type="button">Share</button>
+                </td>
+               </tr>
+            </table>
+        </div>
+        </div>
+<div class="container">
+<div class="itemLeft">
     <h1>
         Ingredients
     </h1>
@@ -70,9 +101,13 @@
         <li>2 tablespoons of ghee (clarified butter)<br></li>
         <li>2 tablespoons of oil</li>
     </p>
-
+    </div>
+    <div class="itemRight">
+    <img src="images/OtherChickenBiriyani.jpg" width="100%" height="400">
+        </div>
+        </div>
     <h1>
-        <br>Instructions
+        Instructions
     </h1>
     <p>
         <h2>1. Marinate the Chicken:</h2>
@@ -94,5 +129,71 @@
         <li>Once done, gently fluff the biryani to mix the layers without breaking the rice grains.</li>
         <li>Serve hot with raita, boiled eggs, or salan (Hyderabadi curry).</li>
     </p>
+    <div id="nutrition">
+     <h2>Nutrition Facts (Per Serving)</h2>
+    <table id="table1">
+    <tr>
+        <td>Calories</td>
+        <td>350 - 450 kcal</td>
+    </tr>
+    <tr>
+        <td>Protein</td>
+        <td>30 - 35g</td>
+    </tr>
+    <tr>
+        <td>Fat</td>
+        <td>25 - 30g</td>
+    </tr>
+    <tr>
+        <td>Saturated Fat</td>
+        <td>10 - 15g</td>
+    </tr>
+    <tr>
+        <td>Carbohydrates</td>
+        <td>10 - 15g</td>
+    </tr>
+    <tr>
+        <td>Dietary fiber</td>
+        <td>2 - 3g</td>
+    </tr>
+    <tr>
+        <td>Sugars</td>
+        <td>5 - 7</td>
+    </tr>
+    <tr>
+        <td>Cholesterol</td>
+        <td>80 - 100mg</td>
+    </tr>
+    <tr>
+        <td>Soduim</td>
+        <td>600 - 800mg</td>
+    </tr>
+    <tr>
+        <td>Potassium</td>
+        <td>400 - 500mg</td>
+    </tr>
+    <tr>
+        <td>Calcium</td>
+        <td>50 - 70mg</td>
+    </tr>
+    <tr>
+        <td>Iron</td>
+        <td>1.5 - 2.5mg</td>
+    </tr>
+</table>
+</div>
+
+<hr>
+       <footer>
+            <table class="footer">
+                <tr>
+                    <td><a href="ComingSoon.html">Privacy Policy and Terms</a></td>
+                    <td><a href="SiteCredits.html">Site Credits</a></td>
+                    <td>All Rights Reserved</td>
+                </tr>
+            </table>
+            <center><a href="pdf\tsa_-_forms_appendix.pdf">Work Log and Checklist Forms</a>
+            <br>&copy; 5-Star Recipes 2025</center>
+            </footer>
 </body>
 </html>
