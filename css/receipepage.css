@@ -46,6 +46,21 @@
 	margin-bottom:1cm;
 }
 
+.menuBar {
+	height: 40px;
+	width: 100%;
+	background-color: #2D5DA1;
+}
+
+
+.menuBar a{
+	float: left;
+	font-size: 16px;
+	color:white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
 .nav{
 	text-decoration: none;
 }
@@ -69,6 +84,35 @@
 }
 
 .img{
+	position:relative;
+	width:95%;
+}
+.imgh1{
+	text-align:left;
+	color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgtable{
+	width:"100%";
+	margin-bottom:2cm
+}
+
+.imgtable th{
+	color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    font-size: 25px;
+}
+
+
+.imgtable td{
+		padding:15px;
+		text-align:center;		
+		
+}
+
+.imgTop{
 	position:relative;
 	width:95%;
 }
