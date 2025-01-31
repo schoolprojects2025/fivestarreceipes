@@ -27,14 +27,14 @@
 }
 
 .imgh1{
-	align: left;
+	align:left;
 	color: blue;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .imgtable{
-	width: 100%;
-	margin-bottom:2cm;
+	width:"100%";
+	margin-bottom:2cm
 }
 
 .imgtable th{
@@ -52,25 +52,25 @@
 }
 
 .imgTop{
-	margin-right: 0%;
-	width:85%;
+	position:relative;
+	width:95%;
 }
 
 
 .formLeft {
     float: left;
-	width: 55%;
+	flex: 50%;
 }
 
 .formRight {
-	width: 40%;
+	flex: 50%;
     float: right;
 	
 }
 
 .container {
     display: flex;
-	margin-bottom: 50px;
+	bottom-margin: 50px;
  	width: 100%;
 }
 	
@@ -79,11 +79,10 @@
     display:table;
 	color: #2D5DA1;
 	font-weight: bold;
-	place-self: left;
 }
 
 .fieldset {
-    border-color:#0041C2;
+    border-color:#0041C2;	
 	padding: 25px;
 }
 
