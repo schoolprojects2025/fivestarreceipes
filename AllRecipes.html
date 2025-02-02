@@ -1,28 +1,68 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
+<head>
     <meta charset="utf-8" />
+    <link rel = "stylesheet" href = "css/receipepage.css">
     <title>All Recipes</title>
-
-    <link rel= "stylesheet" href = "css/receipepage.css">
-    <script src="script/script.js"></script>
-    <h1>
-        <div id= "heading">
+    <div id="heading">
             <header>
-                <img src="images/Logo.jpg" width="150" height="150">
+              <div style="display: inline-block;"> 
+                <img src="images/Logo.jpg" width="200" height="150" background-color="blue">  
+              </div>
+              <div class="circle">Team<br>123456</div>
             </header>
-        </div>
-    </h1>
-        <a class="nav" href="index.html">HOME</a>
+    </div>
     </head>
+<body>
+<div class="menuBar">
+ <a class="nav" href="index.html">HOME</a>
+        <a class="nav">ALL RECEIPES</a>
+</div>
+        <section>
+            <table class ="imgtable">
+                <th>Breakfast</th>
+                <tr>
+                    <td><a href="garlicNoodlesRecipe.html"><img src="images\garlicnoodles.jpg" height="200" width="300"></a></td>
+                    <td><a href="chickenBiryaniRecipe.html"><img src="images\HyderabadChickenDumBiryani.jpg" height="200" width="300"></a></td>
+                    <td><a href="chickenMakhani.html"><img src="images\ChickenMakhani.jpg" height="200" width="300"></a></td>
+                    <td><img src="images\Crêpe.jpg" height="200" width="300"></td>
+                </tr>
+                <tr>
+                    <td>Garlic Noodles</td>
+                    <td>Chicken Biryani</td>
+                    <td>Chicken Makhani</td>
+                    <td>Crêpes</td>
+                </tr>
+            </table>
+            
+            <table class="imgtable">
+                <th>Lunch</th>
+                <tr>
+                    <td><img src="images\RiceKrispies.jpg" height="200" width="300"></td>
+                    <td><img src="images\quesadilla.jpg" height="200" width="300"></td>
+                    <td><img src="images\veggieWrap.jpg" height="200" width="300"></td>
+                    <td><img src="images\chocolateMousse.jpg" height="200" width="300"></td>
+                </tr>
+                <tr>
+                    <td>Rice Krispies</td>
+                    <td>Quesadilla</td>
+                    <td>Veggie Wraps</td>
+                    <td>Chocolate Mousse</td>
+                </tr>
+            </table>
+            </section>
 
-    <body>
-    <div id= images>
-        <a href="garlicNoodlesRecipe.html"><img src="images/garlicnoodles.jpg" height="200" width="300"></a>
-        <a href="garlicNoodlesRecipe.html"><img src= "images/chickenBiryani.jpg" height="200" width="300"></a>
-        <a href="ChickenMakhani.html"><img src= "images/ChickenMakhani.jpg" height="200" width="300"></a>
-        <a href="ChickenMakhani.html"><img src= "images/Crêpe.jpg" height= "200" width="300"></a>
-        </div>
+            <hr>
+            <footer>
+            <table class="footer">
+                <tr>
+                    <td><a href="ComingSoon.html">Privacy Policy and Terms</td>
+                    <td><a href="SiteCredits.html">Site Credits</a></td>
+                    <td>All Rights Reserved</td>
+                </tr>
+            </table>
+            <center><a href="pdf\tsa_-_forms_appendix.pdf">Work Log and Checklist Forms</a>
+            <br>&copy; 5-Star Recipes 2025</center>
+            </footer>
     </body>
 </html>
