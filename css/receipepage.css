@@ -95,7 +95,7 @@
 
 .imgtable{
 	width:"100%";
-	margin-bottom:2cm
+	margin-bottom:2cm;
 }
 
 .imgtable th{
@@ -105,15 +105,14 @@
     font-size: 25px;
 }
 
-
 .imgtable td{
-		padding:15px;
-		text-align:center;		
+	padding:15px;
+	text-align: center;		
 		
 }
 
 .imgTop{
-	position:relative;
+	position: relative;
 	width:95%;
 }
 
