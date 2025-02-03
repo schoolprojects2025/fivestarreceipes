@@ -87,6 +87,7 @@
 	position:relative;
 	width:95%;
 }
+
 .imgh1{
 	text-align:left;
 	color: blue;
@@ -106,9 +107,15 @@
 }
 
 .imgtable td{
-	padding:15px;
-	text-align: center;		
-		
+	text-align:center;
+	position:relative;
+	width: 25%;
+}
+
+.imgtable img{
+	position:relative;
+	align:center;
+	width:95%;
 }
 
 .imgTop{
