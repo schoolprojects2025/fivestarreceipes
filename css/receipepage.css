@@ -94,7 +94,7 @@
 }
 
 .imgtable{
-	width:"100%";
+	width:100%;
 	margin-bottom:2cm;
 }
 
@@ -151,3 +151,11 @@
 	}
 }
 
+.allReceipesTable {
+	width: 100%;
+}
+
+#align {
+	text-align:center;
+	padding: 50px;
+}
