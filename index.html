@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <link rel = "stylesheet" href = "css/homepage.css">
+        <script src="script/script.js"></script>
         <title>
             Five Star Recipes
         </title>
@@ -12,47 +14,46 @@
               <div class="circle">Team<br>123456</div>
             </header>
         </div>
-        <link rel = "stylesheet" href = "css/homepage.css">
-        <script src="script/script.js"></script>
+        
     </head>
 
     <body>
         <div class='menuBar'>
             <a href="AllRecipes.html">All Recipes</a>
-            <a href="AllRecipes.html">Lunch</a> 
-            <a href="AllRecipes.html">Dinner</a>           
+            <a href="Recipes.html?mealType=Lunch">Lunch</a> 
+            <a href="Recipes.html?mealType=Dinner">Dinner</a>           
         </div>
         
         <div class="container">
             <div class="formLeft">
                 <h1>The Latest</h1>
                 <h1 style="width:95%"><hr color="orange"></hr></h1>
-                <img class= "imgTop" height="350" src="images\garlicnoodles.jpg">
+                <a href="garlicNoodlesRecipe.html"><img class= "imgTop" height="350" src="images\garlicnoodles.jpg"></a>
             </div>
            <div class="formRight">
            <br><br><br>
             <!-- <form> -->
                 <fieldset class="fieldset">
-                    <legend class="legend">Ready to cook!</legend>
+                    <legend class="legend">Ready to cook?</legend>
                     <!-- Step 1: Start by choosing what type of meal you are in mood for -->
-                     <div id="step-1">
+                     <div id="mealType">
                         <p>What type of meal you want to make?</p>
                         <label>
-                            <input type="radio" name="mealType" value="breakFast"> Breakfast
+                            <input type="radio" name="mealType" value="Breakfast"> Breakfast
                         </label><br>
                         <label>
-                            <input type="radio" name="mealType" value="lunch"> Lunch
+                            <input type="radio" name="mealType" value="Lunch"> Lunch
                         </label><br>
                         <label>
-                            <input type="radio" name="mealType" value="dinner"> Dinner
+                            <input type="radio" name="mealType" value="Dinner"> Dinner
                         </label><br>
                         <label>
-                            <input type="radio" name="mealType" value="dessert"> Dessert
+                            <input type="radio" name="mealType" value="Dessert"> Dessert
                         </label><br>
                     </div>
     
                     <!-- Step 2: Choose to pick how much time you have-->
-                    <div id="step-2">
+                    <div id="time">
                         <p>How much time you have?</p>
                         <label>
                             <input type="radio" name="time" value="lessTime"> 5-15 mins
@@ -61,14 +62,14 @@
                             <input type="radio" name="time" value="mediumTime"> 15-25 mins
                         </label><br>
                         <label>
-                            <input type="radio" name="time" value="moreTime"> 25 - 45 mins
+                            <input type="radio" name="time" value="moreTime"> 25+ mins
                         </label><br>
                     </div>
     
                     <!-- Step 3: Thank you Message -->
-                    <div id="step-3">
+                    <div id="search">
                         <p>Lets start to cook! Click on "Suggestions" to get available suggestions for the selections made!</p>
-                        <button type="button" class="submit-btn" onclick="submitForm()">Suggestions</button>
+                        <button type="button" class="submit-btn" onclick="searchReceipes()">Suggestions</button>
                     </div>
                 </div>
 
@@ -80,10 +81,10 @@
             <table class ="imgtable">
                 <th>Highlights of the Month</th>
                 <tr>
-                    <td><a href="garlicNoodlesRecipe.html"><img src="images\garlicnoodles.jpg" height="200" width="300"></a></td>
-                    <td><a href="chickenBiryaniRecipe.html"><img src="images\HyderabadChickenDumBiryani.jpg" height="200" width="300"></a></td>
-                    <td><a href="chickenMakhani.html"><img src="images\ChickenMakhani.jpg" height="200" width="300"></a></td>
-                    <td><img src="images\Crêpe.jpg" height="200" width="300"></td>
+                    <td><a href="garlicNoodlesRecipe.html"><img src="images\garlicnoodles.jpg" height="200"></a></td>
+                    <td><a href="chickenBiryaniRecipe.html"><img src="images\HyderabadChickenDumBiryani.jpg" height="200"></a></td>
+                    <td><a href="chickenMakhani.html"><img src="images\ChickenMakhani.jpg" height="200"></a></td>
+                    <td><a href="ComingSoon.html"><img src="images\Crêpe.jpg" height="200"></a></td>
                 </tr>
                 <tr>
                     <td>Garlic Noodles</td>
@@ -96,10 +97,10 @@
             <table class="imgtable">
                 <th>More Recipes</th>
                 <tr>
-                    <td><img src="images\RiceKrispies.jpg" height="200" width="300"></td>
-                    <td><img src="images\quesadilla.jpg" height="200" width="300"></td>
-                    <td><img src="images\veggieWrap.jpg" height="200" width="300"></td>
-                    <td><img src="images\chocolateMousse.jpg" height="200" width="300"></td>
+                    <td><a href="ComingSoon.html"><img src="images\RiceKrispies.jpg" height="200"></a></td>
+                    <td><a href="ComingSoon.html"><img src="images\quesadilla.jpg" height="200"></a></td>
+                    <td><a href="ComingSoon.html"><img src="images\veggieWrap.jpg" height="200"></a></td>
+                    <td><a href="ComingSoon.html"><img src="images\chocolateMousse.jpg" height="200"></a></td>
                 </tr>
                 <tr>
                     <td>Rice Krispies</td>
