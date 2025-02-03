@@ -87,6 +87,7 @@
 	position:relative;
 	width:95%;
 }
+
 .imgh1{
 	text-align:left;
 	color: blue;
@@ -94,7 +95,7 @@
 }
 
 .imgtable{
-	width:"100%";
+	width:100%;
 	margin-bottom:2cm;
 }
 
@@ -106,9 +107,15 @@
 }
 
 .imgtable td{
-	padding:15px;
-	text-align: center;		
-		
+	text-align:center;
+	position:relative;
+	width: 25%;
+}
+
+.imgtable img{
+	position:relative;
+	align:center;
+	width:95%;
 }
 
 .imgTop{
@@ -151,3 +158,11 @@
 	}
 }
 
+.allReceipesTable {
+	width: 100%;
+}
+
+#align {
+	text-align:center;
+	padding: 50px;
+}

@@ -1,31 +1,28 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <link rel = "stylesheet" href = "css/receipepage.css">
-        <script src="script/script.js"></script>
-        <title>
-            Five Star Recipes
-        </title>
-        <div id="heading">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel = "stylesheet" href = "css/receipepage.css">
+    <script src="script/script.js"></script>
+    <title>Chicken Makhani</title>
+    <div id="heading">
             <header>
               <div style="display: inline-block;"> 
                 <img src="images/Logo.jpg" width="200" height="150" background-color="blue">  
               </div>
               <div class="circle">Team<br>123456</div>
             </header>
-        </div>
-        
-    </head>
-<body>
+    </div>
+</head>
+<body onload="generateTable()">
  <div class="menuBar">
-    <a class="nav" href="index.html">Home</a>
-    <a class="nav" href="AllRecipes.html">All Receipes</a>
-</div>
- <div id="align">
-        <img src="images/ComingSoon.jpg">
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="AllRecipes.html">All Recipes</a>
  </div>
+
+ <div id="results-table"></div>
 <hr>
-<footer>
+       <footer>
             <table class="footer">
                 <tr>
                     <td><a href="ComingSoon.html">Privacy Policy and Terms</td>
@@ -35,6 +32,6 @@
             </table>
             <center><a href="pdf\tsa_-_forms_appendix.pdf">Work Log and Checklist Forms</a>
             <br>&copy; 5-Star Recipes 2025</center>
-            </footer>
+       </footer>
 </body>
 </html>
