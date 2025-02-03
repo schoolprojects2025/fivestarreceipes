@@ -193,7 +193,7 @@ if (time!="" || time!=null){
 }
 
 
-let table = '<table class="imgtable">';  
+let table = '<table class="srchtable">';  
 table += `<th>${mealType}</th><tr>`;  
 filteredRecipes.forEach(item => {  
 table += `<td><a href="${item.linkPage}"><img src="images/${item.image}" height="200" width="300"></a></td>`;  
