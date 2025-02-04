@@ -193,18 +193,25 @@ if (time!="" || time!=null){
 }
 
 
-let table = '<table class="srchtable">';  
-table += `<th>${mealType}</th><tr>`;  
-filteredRecipes.forEach(item => {  
-table += `<td><a href="${item.linkPage}"><img src="images/${item.image}" height="200" width="300"></a></td>`;  
-});  
-table += `</tr><tr>`;
-filteredRecipes.forEach(item => {  
-table += `<td>${item.text}</td>`;})
-table +=`</tr></table>`;  
+let table = '<table class="srchtable">';
+table += `<th>${mealType}</th><tr>`;
 
-const tableContainer = document.getElementById('results-table');  
-tableContainer.innerHTML = table; 
+// Track column count to ensure 4 items per row
+let columnCount = 0;
+
+filteredRecipes.forEach(item => {
+    if (columnCount === 4) {
+        table += `</tr><tr>`; // Start a new row after 4 items
+        columnCount = 0; // Reset column count
+    }
+    table += `<td><a href="${item.linkPage}"><img src="images/${item.image}" height="200" width="300"></a><br>${item.text}</td>`;
+    columnCount++;
+});
+
+table += `</tr></table>`; // Close the table
+
+const tableContainer = document.getElementById('results-table');
+tableContainer.innerHTML = table;
   
 }  
 
