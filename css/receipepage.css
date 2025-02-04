@@ -131,9 +131,15 @@
 }
 
 .srchtable td{
-	padding:15px;
-	text-align: center;		
-		
+	text-align: center;	
+	position:relative;
+	width: 25%;
+}
+
+.srchtable img{
+	align: center;	
+	position:relative;
+	max-width: 95%;
 }
 
 .imgTop{
