@@ -35,30 +35,6 @@ function getQueryParamValue(paramName){
 }
 
 
-
-//
-function test(){
-
-    const mealType = getQueryParamValue("mealType");
-    alert(mealType);
-    const time = getQueryParamValue("time");
-    alert(time);
-    if(mealType!="breakfast"){
-        document.getElementById("allReceipesTable").style.visibility="collapse";
-    }
-}
-
-function test2(){
-    const data = [  
-{ name: 'John', age: 30, email: 'john@example.com' },  
-{ name: 'Jane', age: 25, email: 'jane@example.com' },  
-{ name: 'Bob', age: 40, email: 'bob@example.com' }  
-];  
-
-const tableContainer = document.getElementById('table-container');  
-tableContainer.innerHTML = generateTable(data); 
-}
-
 function generateTable() {  
 const recipes = [ 
   { id: 1, 
