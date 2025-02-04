@@ -177,7 +177,7 @@ let columnCount = 0;
 
 filteredRecipes.forEach(item => {
     if (columnCount === 4) {
-        table += `</tr><tr>`; // Start a new row after 4 items
+        table += `</tr><br><tr>`; // Start a new row after 4 items
         columnCount = 0; // Reset column count
     }
     table += `<td><a href="${item.linkPage}"><img src="images/${item.image}" height="200" width="300"></a><br>${item.text}</td>`;
