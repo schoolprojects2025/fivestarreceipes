@@ -133,7 +133,7 @@
 .srchtable td{
 	text-align: center;	
 	position:relative;
-	width: 25%;
+	max-width: 25%;
 }
 
 .srchtable img{
