@@ -92,7 +92,7 @@ const recipes = [
   { id: 5, 
    image: "quesadilla.jpg", 
    text:"Quesadilla",
-   linkPage: "ComingSoon.html",
+   linkPage: "QuesadillaRecipe.html",
    mealType: "Breakfast", 
    time: "lessTime"
   },
@@ -120,14 +120,14 @@ const recipes = [
   { id: 9, 
    image: "RiceKrispies.jpg", 
    text:"Rice Krispies",
-   linkPage: "ComingSoon.html",
+   linkPage: "RiceKrispies.html",
    mealType: "Dessert", 
    time: "lessTime"
   },
   { id: 10, 
-   image: "Crepes.jpg", 
-   text: "Crepes",
-   linkPage: "ComingSoon.html",
+   image: "Crêpe.jpg", 
+   text: "Crêpes",
+   linkPage: "Crêpes.html",
    mealType: "Dessert", 
    time: "moreTime"
   },
