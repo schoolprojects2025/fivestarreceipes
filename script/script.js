@@ -98,7 +98,7 @@ const recipes = [
    text:"Rice Krispies",
    linkPage: "RiceKrispies.html",
    mealType: "Dessert", 
-   time: "mediumTime"
+   time: "lessTime"
   },
   { id: 10, 
    image: "Crepe.jpg", 
