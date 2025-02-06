@@ -98,10 +98,10 @@ const recipes = [
    text:"Rice Krispies",
    linkPage: "RiceKrispies.html",
    mealType: "Dessert", 
-   time: "mediumTime"
+   time: "lessTime"
   },
   { id: 10, 
-   image: "Crepe.jpg", 
+   image: "crepe.jpg", 
    text: "Crepes",
    linkPage: "Crepes.html",
    mealType: "Dessert", 
