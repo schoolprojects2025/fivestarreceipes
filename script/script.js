@@ -101,7 +101,7 @@ const recipes = [
    time: "lessTime"
   },
   { id: 10, 
-   image: "Crepe.jpg", 
+   image: "crepe.jpg", 
    text: "Crepes",
    linkPage: "Crepes.html",
    mealType: "Dessert", 
