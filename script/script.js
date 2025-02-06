@@ -68,7 +68,7 @@ const recipes = [
   { id: 5, 
    image: "quesadilla.jpg", 
    text:"Quesadilla",
-   linkPage: "ComingSoon.html",
+   linkPage: "QuesadillaRecipe.html",
    mealType: "Breakfast", 
    time: "mediumTime"
   },
@@ -96,21 +96,21 @@ const recipes = [
   { id: 9, 
    image: "RiceKrispies.jpg", 
    text:"Rice Krispies",
-   linkPage: "ComingSoon.html",
+   linkPage: "RiceKrispies.html",
    mealType: "Dessert", 
    time: "mediumTime"
   },
   { id: 10, 
    image: "Crepes.jpg", 
    text: "Crepes",
-   linkPage: "ComingSoon.html",
+   linkPage: "Crepes.html",
    mealType: "Dessert", 
    time: "moreTime"
   },
   { id: 11, 
    image: "chocolateMousse.jpg", 
    text: "Chocolate Mousse",
-   linkPage: "ComingSoon.html",
+   linkPage: "ChocolateMousse.html",
    mealType: "Dessert", 
    time: "mediumTime"
   },
