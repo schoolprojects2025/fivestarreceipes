@@ -53,14 +53,14 @@ const recipes = [
   },
   { id: 3, 
    image: "EggFriedRice.jpg", 
-   text: "Egg Fried Rice",
+   text: "Egg Fried Rice<br>(Coming Soon)",
    linkPage: "ComingSoon.html",
    mealType: "Lunch", 
    time: "lessTime"
   },
   { id: 4, 
    image: "ThaiMangoRice.jpg", 
-   text:"Thai Mango Rice",
+   text:"Thai Mango Rice<br>(Coming Soon)",
    linkPage: "ComingSoon.html",
    mealType: "Lunch", 
    time: "mediumTime"
@@ -70,25 +70,25 @@ const recipes = [
    text:"Quesadilla",
    linkPage: "QuesadillaRecipe.html",
    mealType: "Breakfast", 
-   time: "lessTime"
+   time: "mediumTime"
   },
   { id: 6, 
    image: "veggieWrap.jpg", 
    text:"Veggie Wrap",
-   linkPage: "ComingSoon.html",
+   linkPage: "VeggieWraps.html",
    mealType: "Breakfast", 
-   time: "mediumTime"
+   time: "lessTime"
   },
   { id: 7, 
    image: "BasilPestoEggSandwich.jpg", 
-   text: "Basil Pesto Egg Sandwich",
+   text: "Basil Pesto Egg Sandwich<br>(Coming Soon)",
    linkPage: "ComingSoon.html",
    mealType: "Breakfast", 
    time: "moreTime"
   },
   { id: 8, 
    image: "ScrambledEggs.jpg", 
-   text: "Scrambled Eggs",
+   text: "Scrambled Eggs<br>(Coming Soon)",
    linkPage: "ComingSoon.html",
    mealType: "Breakfast", 
    time: "lessTime"
@@ -98,12 +98,12 @@ const recipes = [
    text:"Rice Krispies",
    linkPage: "RiceKrispies.html",
    mealType: "Dessert", 
-   time: "lessTime"
+   time: "mediumTime"
   },
   { id: 10, 
-   image: "Crêpe.jpg", 
-   text: "Crêpes",
-   linkPage: "Crêpes.html",
+   image: "Crepes.jpg", 
+   text: "Crepes",
+   linkPage: "Crepes.html",
    mealType: "Dessert", 
    time: "moreTime"
   },
@@ -116,14 +116,14 @@ const recipes = [
   },
   { id: 12, 
    image: "mangolassi.jpg", 
-   text:"Mango Lassi",
+   text:"Mango Lassi<br>(Coming Soon)",
    linkPage: "ComingSoon.html",
    mealType: "Dessert", 
    time: "lessTime"
   },
   { id: 13, 
    image: "GarlicKnots.jpg", 
-   text:"Garlic Knots",
+   text:"Garlic Knots<br>(Coming Soon)",
    linkPage: "ComingSoon.html",
    mealType: "Dinner", 
    time: "moreTime"
@@ -131,7 +131,7 @@ const recipes = [
   { id: 14, 
    image: "CreamyAlfredoPasta.jpg", 
    text: "Creamy Alfredo Pasta",
-   linkPage: "ComingSoon.html",
+   linkPage: "AlfredoPasta.html",
    mealType: "Dinner", 
    time: "moreTime"
   },
@@ -144,7 +144,7 @@ const recipes = [
   },
   { id: 16, 
    image: "GuacamoleVeggieTaco.jpg", 
-   text:"Guacamole Veggie Taco",
+   text:"Guacamole Veggie Taco<br>(Coming Soon)",
    linkPage: "ComingSoon.html",
    mealType: "Dinner", 
    time: "lessTime"
