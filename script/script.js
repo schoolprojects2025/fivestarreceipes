@@ -134,7 +134,7 @@ const recipes = [
   { id: 11, 
    image: "chocolateMousse.jpg", 
    text: "Chocolate Mousse",
-   linkPage: "ComingSoon.html",
+   linkPage: "ChocolateMousse.html",
    mealType: "Dessert", 
    time: "mediumTime"
   },
