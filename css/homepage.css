@@ -14,6 +14,7 @@
 	height: 40px;
 	width: 100%;
 	background-color: #2D5DA1;
+
 }
 
 
@@ -24,6 +25,8 @@
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 17px;
+
 }
 
 .imgh1{
@@ -39,9 +42,9 @@
 
 .imgtable th{
 	color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Libre Baskerville', serif;
     float: left;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 
@@ -66,6 +69,7 @@
 .formLeft {
     float: left;
 	flex: 50%;
+	font-family: 'Libre Baskerville', serif;
 }
 
 .formRight {
@@ -93,6 +97,8 @@
 }
 
 .submit-btn{
+	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
+	font-size: 17px;
 	height: 30px;
 }
 
@@ -124,4 +130,16 @@
 		text-decoration:none;
 		color:black;
 	}
+}
+
+body {
+	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	text-transform: none;
+	white-space: normal;
+	letter-spacing: 0;
+	font-size: 17px;
+	line-height: 20px;
 }

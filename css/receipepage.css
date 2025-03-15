@@ -39,8 +39,8 @@
 }
 
 #headingsText {
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
+    font-family: 'Libre Baskerville', serif;
     text-align: center;
     font-size: 20px;
 	margin-bottom:1cm;
@@ -55,7 +55,8 @@
 
 .menuBar a{
 	float: left;
-	font-size: 16px;
+	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
+	font-size: 17px;
 	color:white;
 	text-align: center;
 	padding: 14px 16px;
@@ -101,9 +102,9 @@
 
 .imgtable th{
 	color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Libre Baskerville', serif;
     float: left;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .imgtable td{
@@ -149,6 +150,8 @@
 }
 
 .btn{
+	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
+	font-size: 17px;
 	height: 30px;
 	width: 75px;
 }
@@ -165,7 +168,7 @@
 	color:#D2042D;
 	top:0;
 	right:0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
 	font-weight:bold;
 	margin-right:15px;
 	margin-top: 50px;
@@ -190,4 +193,16 @@
 #align {
 	text-align:center;
 	padding: 50px;
+}
+
+body {
+	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	text-transform: none;
+	white-space: normal;
+	letter-spacing: 0;
+	font-size: 17px;
+	line-height: 20px;
 }
