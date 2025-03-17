@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel = "stylesheet" href = "css/receipepage.css">
-        <script src="script/script.js"></script>
+        <script src="script/script.js" defer></script>
     <meta charset="utf-8" />
     <title>Scrambled Eggs</title>
      <div id="heading">
@@ -50,7 +50,17 @@
                 <td align="right">
 <body>
 
-    <button class="btn" type="button" onclick="rateFunction()">Rate</button>
+    <td align="right">
+                    <div class="rating-container">
+                        <button class="btn" type="button">Rate</button>
+                        <div class="stars">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
     <button class="btn" type="button" onclick="printPage()">Print</button>
                    <button class="btn type="button onclick="sendEmail()">Share</button>
 
