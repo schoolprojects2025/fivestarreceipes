@@ -60,8 +60,8 @@ const recipes = [
   },
   { id: 4, 
    image: "ThaiMangoRice.jpg", 
-   text:"Thai Mango Rice<br>(Coming Soon)",
-   linkPage: "ComingSoon.html",
+   text:"Thai Mango Rice",
+   linkPage: "ThaiMangoRiceRecipe.html",
    mealType: "Lunch", 
    time: "mediumTime"
   },
@@ -88,8 +88,8 @@ const recipes = [
   },
   { id: 8, 
    image: "ScrambledEggs.jpg", 
-   text: "Scrambled Eggs<br>(Coming Soon)",
-   linkPage: "ComingSoon.html",
+   text: "Scrambled Eggs",
+   linkPage: "ScrambledEggs.html",
    mealType: "Breakfast", 
    time: "lessTime"
   },
