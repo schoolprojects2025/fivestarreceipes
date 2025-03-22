@@ -1,4 +1,4 @@
-﻿
+
 function loadPageContent(url) {
     document.getElementById('contentObject').data = url;
 }
@@ -60,8 +60,8 @@ const recipes = [
   },
   { id: 4, 
    image: "ThaiMangoRice.jpg", 
-   text:"Thai Mango Rice<br>(Coming Soon)",
-   linkPage: "ComingSoon.html",
+   text:"Thai Mango Rice",
+   linkPage: "ThaiMangoRiceRecipe.html",
    mealType: "Lunch", 
    time: "mediumTime"
   },
@@ -188,8 +188,6 @@ table += `</tr></table>`; // Close the table
 
 const tableContainer = document.getElementById('results-table');
 tableContainer.innerHTML = table;
-  
-}  
 
 function printPage() {
             window.print();
@@ -276,6 +274,7 @@ function showStars() {
         star.style.display = "inline-block"; // Show the stars again on hover
     });
 }
+
 
 
 
