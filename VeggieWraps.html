@@ -3,7 +3,7 @@
      <head>
         <title>Veggie Wraps Recipe</title>
         <link rel = "stylesheet" href = "css/receipepage.css">
-        <script src="script/script.js"></script>
+        <script src="script/script.js" defer></script>
 
         <div id="heading">
             <header>
@@ -51,10 +51,19 @@
                 <td align="right"><b>4.6 </b>(121 Reviews)</td>
                </tr>
                <tr>
-                <td align="right">
-                    <button class="btn" type="button" onclick = "location.href='ComingSoon.html';">Rate</button>
-                    <button class="btn" type="button" onclick = "location.href='ComingSoon.html';">Print</button>
-                    <button class="btn" type="button" onclick = "location.href='ComingSoon.html';">Share</button>
+<td align="right">
+                    <div class="rating-container">
+                        <button class="btn" type="button">Rate</button>
+                        <div class="stars">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <button class="btn" type="button" onclick="printPage()">Print</button>
+                    <button class="btn type="button onclick="sendEmail()">Share</button>
                 </td>
                </tr>
             </table>
