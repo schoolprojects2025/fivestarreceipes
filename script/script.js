@@ -110,7 +110,7 @@ const recipes = [
   { id: 11, 
    image: "chocolateMousse.jpg", 
    text: "Chocolate Mousse",
-   linkPage: "ChocolateMousse.html",
+   linkPage: "ChocolateMousseRecipe.html",
    mealType: "Dessert", 
    time: "mediumTime"
   },
