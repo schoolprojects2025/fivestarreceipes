@@ -88,8 +88,8 @@ const recipes = [
   },
   { id: 8, 
    image: "ScrambledEggs.jpg", 
-   text: "Scrambled Eggs<br>(Coming Soon)",
-   linkPage: "ComingSoon.html",
+   text: "Scrambled Eggs",
+   linkPage: "ScrambledEggs.html",
    mealType: "Breakfast", 
    time: "lessTime"
   },
@@ -190,3 +190,91 @@ const tableContainer = document.getElementById('results-table');
 tableContainer.innerHTML = table;
   
 }  
+
+function printPage() {
+            window.print();
+ }
+
+function sendEmail() {
+    let url = window.location.href; // Example URL
+    let fullBody = `Check out this link: ${encodeURIComponent(url)}`;
+
+    window.location.href = `mailto:?body=${fullBody}`;
+}
+
+//Javascript for Rating
+const stars = document.querySelectorAll(".star");
+let selectedRating = 0;
+
+// Event listeners for stars
+stars.forEach((star) => {
+    star.addEventListener("mouseover", function () {
+        if (selectedRating === 0) {  // Only highlight when no rating is selected
+            highlightStars(this.getAttribute("data-value"));
+        }
+    });
+
+    star.addEventListener("click", function () {
+        if (selectedRating === 0) { // Only allow click if no rating has been selected
+            selectedRating = this.getAttribute("data-value");
+            lockStars(selectedRating);
+            hideStars(); // Hide the stars after clicking
+        }
+    });
+
+    star.addEventListener("mouseleave", function () {
+        if (!selectedRating) resetStars();
+    });
+});
+
+// Event listener for the rating container to show the stars on hover
+const ratingContainer = document.querySelector(".rating-container");
+
+ratingContainer.addEventListener("mouseover", function () {
+    if (selectedRating === 0) {
+        showStars(); // Show stars again on mouse over
+    } 
+});
+
+// Functions for highlighting, resetting, and locking stars
+function highlightStars(value) {
+    stars.forEach((star) => {
+        star.classList.toggle("hover", star.getAttribute("data-value") <= value);
+    });
+}
+
+function resetStars() {
+    stars.forEach((star) => {
+        star.classList.remove("hover");
+    });
+}
+
+function lockStars(value) {
+    stars.forEach((star) => {
+        star.classList.toggle("selected", star.getAttribute("data-value") <= value);
+    });
+}
+
+function unlockStars() {
+    stars.forEach((star) => {
+        star.classList.toggle("selected", 0);
+    });
+}
+
+function hideStars() {
+
+    stars.forEach((star) => {
+        star.style.display = "none"; // Hide the stars after rating
+    });
+    selectedRating =0;
+    unlockStars();
+}
+
+function showStars() {
+
+    stars.forEach((star) => {
+        star.style.display = "inline-block"; // Show the stars again on hover
+    });
+}
+
+
