@@ -20,13 +20,12 @@
 
 .menuBar a{
 	float: left;
-	font-size: 16px;
+	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
+	font-size: 17px;
 	color:white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 17px;
-
 }
 
 .imgh1{
