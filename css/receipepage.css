@@ -39,8 +39,8 @@
 }
 
 #headingsText {
-    color:blue;
-    font-family: 'Libre Baskerville', serif;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 20px;
 	margin-bottom:1cm;
@@ -55,8 +55,7 @@
 
 .menuBar a{
 	float: left;
-	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
-	font-size: 17px;
+	font-size: 16px;
 	color:white;
 	text-align: center;
 	padding: 14px 16px;
@@ -102,9 +101,9 @@
 
 .imgtable th{
 	color: blue;
-    font-family: 'Libre Baskerville', serif;
+    font-family: Arial, Helvetica, sans-serif;
     float: left;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .imgtable td{
@@ -150,8 +149,6 @@
 }
 
 .btn{
-	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
-	font-size: 17px;
 	height: 30px;
 	width: 75px;
 }
@@ -168,7 +165,7 @@
 	color:#D2042D;
 	top:0;
 	right:0;
-	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	margin-right:15px;
 	margin-top: 50px;
@@ -195,14 +192,40 @@
 	padding: 50px;
 }
 
-body {
-	font-family: STIXTwoText, "sans serif", sans-serif, "Helvetica Neue", Helvetica, arial;
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-	text-transform: none;
-	white-space: normal;
-	letter-spacing: 0;
-	font-size: 17px;
-	line-height: 20px;
+.star {
+	font-size: 30px;
+	cursor: pointer;
+	color: #ccc;
+	transition: color 0.2s;
+}
+
+.star.hover,
+.star.selected {
+	color: gold;
+}
+
+.stars {
+	display: flex;
+	gap: 5px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: white;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.2s, opacity 0.2s;
+}
+
+.rating-container {
+	position: relative;
+	display: inline-block;
+}
+
+.rating-container:hover .stars {
+	visibility: visible;
+	opacity: 1;
 }
