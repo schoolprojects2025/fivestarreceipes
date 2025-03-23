@@ -117,7 +117,7 @@ const recipes = [
   { id: 12, 
    image: "mangolassi.jpg", 
    text:"Mango Lassi<br>(Coming Soon)",
-   linkPage: "ComingSoon.html",
+   linkPage: "MangoLassiRecipe.html",
    mealType: "Dessert", 
    time: "lessTime"
   },
@@ -241,6 +241,7 @@ stars.forEach((star) => {
     star.addEventListener("touchstart", function () {
         selectedRating = this.getAttribute("data-value");
         lockStars(selectedRating);
+        hideStars(); // Hide the stars after clicking
     });
 });
 
