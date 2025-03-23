@@ -214,6 +214,13 @@ stars.forEach((star) => {
         }
     });
 
+    //for mobile
+    star.addEventListener("touchenter", function () {
+        if (selectedRating === 0) {  // Only highlight when no rating is selected
+            highlightStars(this.getAttribute("data-value"));
+        }
+    });
+
     star.addEventListener("click", function () {
         if (selectedRating === 0) { // Only allow click if no rating has been selected
             selectedRating = this.getAttribute("data-value");
@@ -225,33 +232,24 @@ stars.forEach((star) => {
     star.addEventListener("mouseleave", function () {
         if (!selectedRating) resetStars();
     });
-});
 
-// Event listener for the rating container to show the stars on hover
-const ratingContainer = document.querySelector(".rating-container");
-
-ratingContainer.addEventListener("mouseover", function () {
-    if (selectedRating === 0) {
-        showStars(); // Show stars again on mouse over
-    } 
-});
-
-// Ensure stars update correctly on touch (for mobile)
-stars.forEach((star) => {
-    star.addEventListener("touchstart", function () {
-        if (selectedRating === 0) {
-        showStars(); // Show stars again 
-        } 
-
-        selectedRating = this.getAttribute("data-value");
-        lockStars(selectedRating);
-        hideStars(); // Hide the stars after clicking
-    });
-
-    star.addEventListener("touchend", function () {
+    //for mobile
+    star.addEventListener("touchleave", function () {
         if (!selectedRating) resetStars();
     });
+
+
+    // Event listener for the rating container to show the stars on hover
+    const ratingContainer = document.querySelector(".rating-container");
+
+    ratingContainer.addEventListener("mouseover", function () {
+        if (selectedRating === 0) {
+            showStars(); // Show stars again on mouse over
+        } 
+    });
+
 });
+
 
 // Functions for highlighting, resetting, and locking stars
 function highlightStars(value) {
