@@ -241,6 +241,7 @@ stars.forEach((star) => {
     star.addEventListener("touchstart", function () {
         selectedRating = this.getAttribute("data-value");
         lockStars(selectedRating);
+        highlightStars(selectedRating);
         hideStars(); // Hide the stars after clicking
     });
 });
