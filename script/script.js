@@ -239,9 +239,17 @@ ratingContainer.addEventListener("mouseover", function () {
 // Ensure stars update correctly on touch (for mobile)
 stars.forEach((star) => {
     star.addEventListener("touchstart", function () {
+        if (selectedRating === 0) {
+        showStars(); // Show stars again 
+        } 
+
         selectedRating = this.getAttribute("data-value");
         lockStars(selectedRating);
         hideStars(); // Hide the stars after clicking
+    });
+
+    star.addEventListener("touchend", function () {
+        if (!selectedRating) resetStars();
     });
 });
 
