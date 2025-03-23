@@ -236,6 +236,14 @@ ratingContainer.addEventListener("mouseover", function () {
     } 
 });
 
+// Ensure stars update correctly on touch (for mobile)
+stars.forEach((star) => {
+    star.addEventListener("touchstart", function () {
+        selectedRating = this.getAttribute("data-value");
+        lockStars(selectedRating);
+    });
+});
+
 // Functions for highlighting, resetting, and locking stars
 function highlightStars(value) {
     stars.forEach((star) => {
