@@ -255,12 +255,14 @@ stars.forEach((star) => {
 function highlightStars(value) {
     stars.forEach((star) => {
         star.classList.toggle("hover", star.getAttribute("data-value") <= value);
+        star.classList.toggle("touchenter", star.getAttribute("data-value") <= value);
     });
 }
 
 function resetStars() {
     stars.forEach((star) => {
         star.classList.remove("hover");
+        star.classList.remove("touchleave");
     });
 }
 
