@@ -244,7 +244,8 @@ stars.forEach((star) => {
 
     //for mobile
     star.addEventListener("touchleave", function () {
-        if (!selectedRating) resetStars();
+        resetStars();
+        selectedRating=0;
     });
 });
 
@@ -258,7 +259,6 @@ ratingContainer.addEventListener("mouseover", function () {
 });
 
 ratingContainer.addEventListener("touchstart", function () {
-    selectedRating =0;
     resetStars();
     showStars(); // Show stars again
     
