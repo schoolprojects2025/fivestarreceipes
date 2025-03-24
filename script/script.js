@@ -229,6 +229,14 @@ stars.forEach((star) => {
         }
     });
 
+    star.addEventListener("touchstart", function () {
+        if (selectedRating === 0) { // Only allow click if no rating has been selected
+            selectedRating = this.getAttribute("data-value");
+            lockStars(selectedRating);
+            hideStars(); // Hide the stars after clicking
+        }
+    });
+
     
     star.addEventListener("mouseleave", function () {
         if (!selectedRating) resetStars();
