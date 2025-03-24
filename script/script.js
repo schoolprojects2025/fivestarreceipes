@@ -214,6 +214,8 @@ stars.forEach((star) => {
         }
     });
 
+    
+
     star.addEventListener("click", function () {
         if (selectedRating === 0) { // Only allow click if no rating has been selected
             selectedRating = this.getAttribute("data-value");
@@ -222,7 +224,23 @@ stars.forEach((star) => {
         }
     });
 
+    //for mobile
+    star.addEventListener("touchstart", function () {
+        if (selectedRating === 0) { // Only allow click if no rating has been selected
+            selectedRating = this.getAttribute("data-value");
+            lockStars(selectedRating);
+            hideStars(); // Hide the stars after clicking
+        }
+    });
+
+
+
     star.addEventListener("mouseleave", function () {
+        if (!selectedRating) resetStars();
+    });
+
+    //for mobile
+    star.addEventListener("touchend", function () {
         if (!selectedRating) resetStars();
     });
 });
@@ -234,22 +252,6 @@ ratingContainer.addEventListener("mouseover", function () {
     if (selectedRating === 0) {
         showStars(); // Show stars again on mouse over
     } 
-});
-
-// Ensure stars update correctly on touch (for mobile)
-stars.forEach((star) => {
-    star.addEventListener("touchstart", function () {
-        if (selectedRating === 0) {
-            showStars(); // Show stars again on mouse over
-        } 
-        setRating(this.getAttribute("data-value"));
-    });
-
-});
-stars.forEach((star) => {
-    star.addEventListener("touchend" ,function () {
-    resetRating();
-    });
 });
 
 // Function to set rating and reset after delay
