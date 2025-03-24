@@ -1,4 +1,4 @@
-﻿
+
 function loadPageContent(url) {
     document.getElementById('contentObject').data = url;
 }
@@ -214,13 +214,6 @@ stars.forEach((star) => {
         }
     });
 
-    //for mobile
-    star.addEventListener("touchenter", function () {
-        if (selectedRating === 0) {  // Only highlight when no rating is selected
-            highlightStars(this.getAttribute("data-value"));
-        }
-    });
-
     star.addEventListener("click", function () {
         if (selectedRating === 0) { // Only allow click if no rating has been selected
             selectedRating = this.getAttribute("data-value");
@@ -232,37 +225,58 @@ stars.forEach((star) => {
     star.addEventListener("mouseleave", function () {
         if (!selectedRating) resetStars();
     });
+});
 
-    //for mobile
-    star.addEventListener("touchleave", function () {
-        if (!selectedRating) resetStars();
-    });
+// Event listener for the rating container to show the stars on hover
+const ratingContainer = document.querySelector(".rating-container");
 
+ratingContainer.addEventListener("mouseover", function () {
+    if (selectedRating === 0) {
+        showStars(); // Show stars again on mouse over
+    } 
+});
 
-    // Event listener for the rating container to show the stars on hover
-    const ratingContainer = document.querySelector(".rating-container");
-
-    ratingContainer.addEventListener("mouseover", function () {
-        if (selectedRating === 0) {
-            showStars(); // Show stars again on mouse over
-        } 
+// Ensure stars update correctly on touch (for mobile)
+stars.forEach((star) => {
+    star.addEventListener("touchstart", function () {
+        setRating(this.getAttribute("data-value"));
     });
 
 });
+stars.forEach((star) => {
+    star.addEventListener("touchend" ,function () {
+    resetRating();
+    });
+});
 
+// Function to set rating and reset after delay
+function setRating(value) {
+    selectedRating = value;
+    
+    lockStars(value);
+    highlightStars(value);
+}
+
+function resetRating() {
+    resetTimeout = setTimeout(() => {
+        selectedRating = 0;
+        resetStars();
+        hideStars();
+    }, 100);
+}
 
 // Functions for highlighting, resetting, and locking stars
+// Functions for star visuals
 function highlightStars(value) {
     stars.forEach((star) => {
         star.classList.toggle("hover", star.getAttribute("data-value") <= value);
-        star.classList.toggle("touchenter", star.getAttribute("data-value") <= value);
     });
 }
 
 function resetStars() {
     stars.forEach((star) => {
         star.classList.remove("hover");
-        star.classList.remove("touchleave");
+        star.classList.remove("selected");
     });
 }
 
