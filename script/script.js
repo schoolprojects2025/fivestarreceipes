@@ -258,9 +258,9 @@ ratingContainer.addEventListener("mouseover", function () {
 });
 
 ratingContainer.addEventListener("touchstart", function () {
-    if (selectedRating === 0) {
-        showStars(); // Show stars again
-    }
+    resetStars();
+    showStars(); // Show stars again
+    
     
 });
 
