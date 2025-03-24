@@ -214,7 +214,8 @@ stars.forEach((star) => {
         }
     });
 
-    star.addEventListener("touchstart", function () {
+    //for mobile
+    star.addEventListener("touchmove", function () {
         if (selectedRating === 0) {  // Only highlight when no rating is selected
             highlightStars(this.getAttribute("data-value"));
         }
@@ -228,17 +229,7 @@ stars.forEach((star) => {
         }
     });
 
-    //for mobile
-    star.addEventListener("touchmove", function () {
-        if (selectedRating === 0) { // Only allow click if no rating has been selected
-            selectedRating = this.getAttribute("data-value");
-            lockStars(selectedRating);
-            hideStars(); // Hide the stars after clicking
-        }
-    });
-
-
-
+    
     star.addEventListener("mouseleave", function () {
         if (!selectedRating) resetStars();
     });
@@ -259,8 +250,9 @@ ratingContainer.addEventListener("mouseover", function () {
 });
 
 ratingContainer.addEventListener("touchstart", function () {
-    resetStars();
-    showStars(); // Show stars again
+    if (selectedRating === 0) {
+        showStars(); // Show stars again
+    }
     
 });
 
