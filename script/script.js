@@ -215,6 +215,7 @@ stars.forEach((star) => {
     });
 
     star.addEventListener("click", function () {
+        alert ("click event " + selectedRating );
         if (selectedRating === 0) { // Only allow click if no rating has been selected
             selectedRating = this.getAttribute("data-value");
             lockStars(selectedRating);
@@ -224,6 +225,7 @@ stars.forEach((star) => {
 
     //for mobile
     star.addEventListener("touchstart", function () {
+        alert("touch start event " + selectedRating);
         if (selectedRating === 0) { // Only allow click if no rating has been selected
             selectedRating = this.getAttribute("data-value");
             lockStars(selectedRating);
@@ -234,11 +236,13 @@ stars.forEach((star) => {
 
 
     star.addEventListener("mouseleave", function () {
+        alert("mouse leave event " + selectedRating);
         if (!selectedRating) resetStars();
     });
 
     //for mobile
     star.addEventListener("touchleave", function () {
+        alert("touch leave event " + selectedRating);
         if (!selectedRating) resetStars();
     });
 });
@@ -247,6 +251,13 @@ stars.forEach((star) => {
 const ratingContainer = document.querySelector(".rating-container");
 
 ratingContainer.addEventListener("mouseover", function () {
+    if (selectedRating === 0) {
+        showStars(); // Show stars again on mouse over
+    } 
+});
+
+ratingContainer.addEventListener("touchstart", function () {
+    alert("in touchstart " + selectedRating);
     if (selectedRating === 0) {
         showStars(); // Show stars again on mouse over
     } 
