@@ -1,4 +1,4 @@
-﻿
+
 function loadPageContent(url) {
     document.getElementById('contentObject').data = url;
 }
