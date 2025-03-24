@@ -1,4 +1,4 @@
-
+﻿
 function loadPageContent(url) {
     document.getElementById('contentObject').data = url;
 }
@@ -262,7 +262,7 @@ function resetRating() {
         selectedRating = 0;
         resetStars();
         hideStars();
-    }, 100);
+    }, 300);
 }
 
 // Functions for highlighting, resetting, and locking stars
