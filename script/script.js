@@ -239,6 +239,9 @@ ratingContainer.addEventListener("mouseover", function () {
 // Ensure stars update correctly on touch (for mobile)
 stars.forEach((star) => {
     star.addEventListener("touchstart", function () {
+        if (selectedRating === 0) {
+            showStars(); // Show stars again on mouse over
+        } 
         setRating(this.getAttribute("data-value"));
     });
 
