@@ -259,26 +259,10 @@ ratingContainer.addEventListener("mouseover", function () {
 });
 
 ratingContainer.addEventListener("touchstart", function () {
-    if (selectedRating === 0) {
-        showStars(); // Show stars again on mouse over
-    } 
-});
-
-// Function to set rating and reset after delay
-function setRating(value) {
-    selectedRating = value;
+    resetStars();
+    showStars(); // Show stars again
     
-    lockStars(value);
-    highlightStars(value);
-}
-
-function resetRating() {
-    resetTimeout = setTimeout(() => {
-        selectedRating = 0;
-        resetStars();
-        hideStars();
-    }, 300);
-}
+});
 
 // Functions for highlighting, resetting, and locking stars
 // Functions for star visuals
