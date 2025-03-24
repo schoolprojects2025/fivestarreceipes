@@ -214,6 +214,12 @@ stars.forEach((star) => {
         }
     });
 
+    star.addEventListener("touchstart", function () {
+        if (selectedRating === 0) {  // Only highlight when no rating is selected
+            highlightStars(this.getAttribute("data-value"));
+        }
+    });
+
     star.addEventListener("click", function () {
         if (selectedRating === 0) { // Only allow click if no rating has been selected
             selectedRating = this.getAttribute("data-value");
@@ -223,7 +229,7 @@ stars.forEach((star) => {
     });
 
     //for mobile
-    star.addEventListener("touchstart", function () {
+    star.addEventListener("touchmove", function () {
         if (selectedRating === 0) { // Only allow click if no rating has been selected
             selectedRating = this.getAttribute("data-value");
             lockStars(selectedRating);
