@@ -239,14 +239,34 @@ ratingContainer.addEventListener("mouseover", function () {
 // Ensure stars update correctly on touch (for mobile)
 stars.forEach((star) => {
     star.addEventListener("touchstart", function () {
-        selectedRating = this.getAttribute("data-value");
-        lockStars(selectedRating);
-        highlightStars(selectedRating);
-        hideStars(); // Hide the stars after clicking
+        setRating(this.getAttribute("data-value"));
+    });
+
+});
+stars.forEach((star) => {
+    star.addEventListener("touchend" ,function () {
+    resetRating();
     });
 });
 
+// Function to set rating and reset after delay
+function setRating(value) {
+    selectedRating = value;
+    
+    lockStars(value);
+    highlightStars(value);
+}
+
+function resetRating() {
+    resetTimeout = setTimeout(() => {
+        selectedRating = 0;
+        resetStars();
+        hideStars();
+    }, 100);
+}
+
 // Functions for highlighting, resetting, and locking stars
+// Functions for star visuals
 function highlightStars(value) {
     stars.forEach((star) => {
         star.classList.toggle("hover", star.getAttribute("data-value") <= value);
@@ -256,6 +276,7 @@ function highlightStars(value) {
 function resetStars() {
     stars.forEach((star) => {
         star.classList.remove("hover");
+        star.classList.remove("selected");
     });
 }
 
